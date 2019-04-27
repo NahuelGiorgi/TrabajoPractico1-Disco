@@ -7,6 +7,10 @@ public class Circulo {
 	private Double perimetroExterior;
 	private Double superficie;
 
+	public Circulo() {
+		
+	}
+	
 	public Circulo(Integer radioInterior, Integer radioExterior) {
 		this.radioInterior = radioInterior;
 		this.radioExterior = radioExterior;
