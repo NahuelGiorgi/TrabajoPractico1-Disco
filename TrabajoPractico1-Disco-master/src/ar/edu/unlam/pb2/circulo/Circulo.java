@@ -1,38 +1,35 @@
 package ar.edu.unlam.pb2.circulo;
 
 public class Circulo {
-	private Integer radioInterior;
-	private Integer radioExterior;
+	private Double radioInterior;
+	private Double radioExterior;
 	private Double perimetroInterior;
 	private Double perimetroExterior;
 	private Double superficie;
 
-	public Circulo() {
-		
-	}
 	
-	public Circulo(Integer radioInterior, Integer radioExterior) {
+	public Circulo(Double radioInterior, Double radioExterior) {
 		this.radioInterior = radioInterior;
 		this.radioExterior = radioExterior;
 	}
 	
-	public Integer calcularRadioInterior(Integer circuloMenor) {
+	public Double calcularRadioInterior(Double circuloMenor) {
 		radioInterior = circuloMenor / 2;
 		return radioInterior;
 	}
 	
-	public Integer calcularRadioExterior (Integer circuloMayor) {
+	public Double calcularRadioExterior (Double circuloMayor) {
 		radioExterior = circuloMayor / 2;
 		return radioExterior;
 	}
 	
 	public Double calcularPerimetroInterior () {
-		perimetroInterior = Math.PI * 2 * this.radioInterior;
+		perimetroInterior = (Math.PI * 2 * this.radioInterior);
 		return perimetroInterior;
 	}
 	
 	public Double calcularPerimetroExterior() {
-		perimetroExterior = Math.PI * 2 * this.radioExterior;
+		perimetroExterior = (Math.PI * 2 * this.radioExterior);
 		return perimetroExterior;
 	}
 	
@@ -41,19 +38,19 @@ public class Circulo {
 		return superficie;
 	}
 
-	public Integer getRadioInterior() {
+	public Double getRadioInterior() {
 		return radioInterior;
 	}
 
-	public void setRadioInterior(Integer radioInterior) {
+	public void setRadioInterior(Double radioInterior) {
 		this.radioInterior = radioInterior;
 	}
 
-	public Integer getRadioExterior() {
+	public Double getRadioExterior() {
 		return radioExterior;
 	}
 
-	public void setRadioExterior(Integer radioExterior) {
+	public void setRadioExterior(Double radioExterior) {
 		this.radioExterior = radioExterior;
 	}
 }
